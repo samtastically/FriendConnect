@@ -1,0 +1,118 @@
+<!--
+Author: Samantha Cox
+File: index.html
+Description: This page represents the login / account creation page of the FriendConnect
+application. The client is set up to enable to user to create a new account in
+the database. Additionally, the client allows the user to login; however, the
+user must have valid credentials. Database prevents more than one user from having
+an account associated with the same email. When the user "signs in", they are also
+signed in via a cookie, so when they return to index.html when using this application,
+they will be redirected to home.html.
+USAGE: To create an account and make friends, join groups, and interact with other
+users on FriendConnect (site similar to FaceBook or some other similar social
+networking site). Goal is to be used over the internet.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>FriendConnect: Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./code.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="headerItem" id="title"><h1 id="head">FriendConnect</h1></div>
+
+      <!-- HELP button in top right corner -->
+      <div id="buttons">
+        <div class="inside"><input class="browse" onclick="help();" type="button"
+           value="HELP" /></div>
+      </div>
+    </div>
+
+    <div id="userBody">
+
+      <div id="inner">
+
+        <div class="section">
+
+          <h2>Log In</h2>
+
+          <!-- User enters email address -->
+          <div class="subIn">
+            <label for="logEmail">Email Address</label>
+            <input class="userIn" type="email" name="logEmail" id="logEmail" />
+          </div>
+
+          <!-- User enters password for account -->
+          <div class="subIn">
+            <label class="passLabel" for="logPassword">Password</label>
+            <input class="userIn" type="password" name="logPassword" id="logPassword" />
+          </div>
+
+          <div class="subIn">
+            <input onclick="loginUser();" type="submit" value="Log In"
+            id="userClick" name="userClick" />
+          </div>
+
+          <div id="error"> </div>
+
+        </div>
+
+        <div class="section">
+
+          <h2>Create Account</h2>
+
+          <!-- User enters first name -->
+          <div class="subIn">
+            <label id="firstLabel" for="firstName">First Name</label>
+            <input class="userIn" type="text" name="firstName" id="firstName" />
+          </div>
+
+          <!-- User enters last name -->
+          <div class="subIn">
+            <label id="lastLabel" for="lastName">Last Name</label>
+            <input class="userIn" type="text" name="lastName" id="lastName" />
+          </div>
+
+          <!-- User enters email address -->
+          <div class="subIn">
+            <label for="email">Email Address</label>
+            <input class="userIn" type="text" name="email" id="email" />
+          </div>
+
+          <!-- User enters password for account -->
+          <div class="subIn">
+            <label class="passLabel" for="password">Password</label>
+            <input class="userIn" type="password" name="password" id="password" />
+          </div>
+
+          <div class="subIn">
+            <input onclick="addUser();" type="button" value="Create Account"
+                  id="toAdd" name="toAdd" />
+          </div>
+
+          <div id="createError"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="image">
+
+      <br/>
+      <h2>Join Today!</h2>
+      <br/>
+
+      <img src="/img/talk.jpg"
+           id="talking"
+           alt="pic of people talking"
+           width=500 />
+
+    </div>
+
+  </body>
+</html>

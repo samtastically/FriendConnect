@@ -1,0 +1,247 @@
+/* Author: Samantha Cox
+   File: style-home.css
+   Description: This is the .css file for home.html. This contains all the
+   styling for the various attributes, classes, and ids on the home.html
+   page. Contains a variety of fonts, borders, and other styling
+   components that make the page more exciting than basic HTML. Specifically,
+   this just provides style to the client-side of the application by
+   adding some color, font, and stylizing all of the DOM AJAX requests made that
+   update the content of page. */
+
+/* No padding and margin for the body of the page */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Format header color */
+#header {
+  background-color: rgb(232, 164, 252);
+}
+
+/* Make .headerItems display as inline-block on the page */
+.headerItem {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Provide styling for the main "title" of the page */
+#title {
+  font-size: 20px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+}
+
+/* Positions buttons in a fixed manner on the screen. */
+#buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  font-size: 20px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+}
+
+/* Styles left/nav button side of main page */
+#selfSide {
+  border-top: 2px dashed white;
+  position: fixed;
+  top: 110px;
+  bottom: 0px;
+  left: 0px;
+  width: 20%;
+  background-color: rgb(155, 67, 181);
+  text-align: center;
+  font-size: 22px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+  overflow-x: scroll;
+}
+
+/* Styles the main feed (center) of the home page */
+#mainFeed {
+  border-top: 2px dashed white;
+  border-left: 2px dashed white;
+  position: fixed;
+  top: 180px;
+  bottom: 0px;
+  left: 20%;
+  width: 60%;
+  background-color: rgb(219, 158, 219);
+  font-family: "Comic Sans MS", sans-serif;
+}
+
+/* Styles right/friend & group info side of main page */
+#infoSide {
+  border-top: 2px dashed white;
+  border-left: 2px dashed white;
+  position: fixed;
+  top: 110px;
+  bottom: 0px;
+  left: 80%;
+  width: 20%;
+  background-color: rgb(155, 67, 181);
+  text-align: center;
+  font-size: 22px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+  overflow-x: scroll;
+}
+
+/* Provides inside elements with some padding */
+.inside {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Stylizes the posts displayed to the user in the feed */
+#visiblePosts {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Provides padding to the inner feed */
+#innerFeed {
+  padding: 20px;
+}
+
+/* Make the main feed scrollable */
+#mainFeed {
+  overflow-x: scroll;
+}
+
+/* Provides style for the posts on the home page */
+.post {
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 23px;
+  background-color: rgb(230, 228, 230);
+}
+
+/* Styles the time stamps on the posts in the home page */
+#time {
+  font-size: 15px;
+  color: gray;
+}
+
+/* Styles the likers on the posts in the home page */
+#likers {
+  font-size: 17px;
+  color: black;
+}
+
+/* Provides style for the top part where Refresh Feed button is */
+#topFeed {
+  border-top: 2px dashed white;
+  border-left: 2px dashed white;
+  position: fixed;
+  top: 110px;
+  bottom: 10%;
+  left: 20%;
+  width: 60%;
+  background-color: rgb(219, 158, 219);
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+/* Provides padding for elements to give some spacing */
+#head {
+  padding-left: 30px;
+}
+
+/* Provides style for buttons displayed on the page */
+.otherBut {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+/* Provides style for friends displayed */
+#friends {
+  font-size: 20px;
+}
+
+/* Provides style for the comments on the home page */
+.comment {
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 18px;
+  background-color: rgb(230, 228, 230);
+}
+
+/* Provides style for the comment header on posts */
+#commHead {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 20px;
+  font-size: 18px;
+  background-color: rgb(230, 228, 230);
+  text-align: center;
+}
+
+/* Provides style for create buttons on the left side of the screen */
+.create {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Provides style for post buttons */
+.postButtons {
+  margin-right: 20px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+/* Specify font size and font family */
+textarea, #nameGroup, #first, #last {
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+/* Provide styling for people and groups */
+.person, .group {
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 23px;
+  background-color: rgb(237, 202, 252);
+  text-align: center;
+}
+
+/* Provide margin for element */
+#public {
+  margin-right: 20px;
+}
+
+/* Provides style for browse buttons */
+.browse {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 16px;
+  color: purple;
+}
+
+/* Provides style for home buttons */
+.homeBut {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+}
+
+/* Styles the members of groups displayed on the page */
+#members {
+  font-size: 17px;
+  color: black;
+  text-align: left;
+}
+
+/* Center the form element for uploading pictures */
+form {
+  text-align: center;
+}
+
+/* Makes img tags have a width of 60% */
+img {
+  width: 60%;
+}

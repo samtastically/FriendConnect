@@ -1,0 +1,120 @@
+<!--
+Author: Samantha Cox
+File: home.html
+Description: This page represents the Home page of FriendConnect. This is the page
+the user will spend most of their time on. This page updates and changes in
+response to various AJAX requests made by button clicks. This page can display the
+user's feed of visible posts, other people's profiles, groups, and allow the user to
+update their profile. Additionally, this page is broken up into three sections: the
+left side represents the navigation buttons, the main feed represents the current
+focus / task user is engaged with, and the right side contains information pertaining
+to friends and groups.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style-home.css">
+    <title>FriendConnect: Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./code-home.js"></script>
+  </head>
+  <body onload="greetUser(); viewPosts(); getImg();">
+    <div id="header">
+      <div class="headerItem" id="title"><h1 id="head">FriendConnect</h1></div>
+
+      <!-- HELP and LOGOUT buttons in top right corner -->
+      <div id="buttons"><div>
+
+        <div class="inside"><input class="browse" onclick="help();" type="button"
+           value="HELP" /></div>
+
+        <div class="inside"><input class="browse" onclick="logout();" type="button"
+           value="LOGOUT" /></div>
+      </div></div>
+
+    </div>
+
+    <!-- Displays left side of page side with nav buttons -->
+    <div id="selfSide">
+
+      <div id="innerSelf">
+
+        <div class="inside" id="welcomeMess"></div>
+
+        <img src="/img/white.jpeg"
+             id="img"
+             alt="default pic"
+             width=200 />
+
+        <br/><br/>
+
+        <!-- Navigation buttons -->
+        <div class="inside"><input class="homeBut" onclick="toPost(); autoScroll();"
+          type="button" value="Make a New Post" /></div>
+
+        <div class="inside"><input class="homeBut" onclick="toGroup(); autoScroll();"
+          type="button" value="Make a New Group" /></div>
+
+        <div class="inside"><input class="homeBut" onclick="viewPeople(); autoScroll();"
+          type="button" value="View Other Profiles" /></div>
+
+        <div class="inside"><input class="homeBut" onclick="viewGroups(); autoScroll();"
+          type="button" value="View Groups" /></div>
+
+        <div class="inside"><input class="homeBut" onclick="toProfile(); autoScroll();"
+          type="button" value="Edit Profile" /></div>
+
+      </div>
+
+    </div>
+
+    <!-- Start of main feed to user -->
+    <div id="topFeed"></div>
+
+    <div id="mainFeed">
+
+      <div id="innerFeed">
+
+        <div id="visiblePosts"></div>
+
+      </div>
+
+    </div>
+
+    <!-- Displays right side of page with friend and group info -->
+    <div id="infoSide">
+
+      <div id="innerInfo">
+
+        <div class="inside"><b>Friend & Group Info</b></div>
+
+        <div class="inside"><b>Your Friends</b></div>
+
+        <div id="friends">
+
+        </div>
+
+        <br/>
+
+        <div class="inside"><b>Received Friend Requests</b></div>
+
+        <div id="requests">
+
+        </div>
+
+        <br/>
+
+        <div class="inside"><b>Your Groups</b></div>
+
+        <div id="groups">
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

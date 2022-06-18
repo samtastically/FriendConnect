@@ -1,0 +1,102 @@
+<!--
+Author: Samantha Cox
+File: help.html
+Description: This page represents the Help page of FriendConnect. This is the page
+the user can refer to if they need any help navigating the application. Explains
+(in a general sense) how to use most features the page provides / offers users the
+ability to interact with.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style-help.css">
+    <title>FriendConnect: Help</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./code-help.js"></script>
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="headerItem" id="title"><h1 id="head">FriendConnect</h1></div>
+    </div>
+
+    <div id="userBody">
+
+      <!-- Start of explanation of how to use the various features -->
+      <h2>How to Use FriendConnect</h2>
+
+      <h3>Logging In</h3>
+
+      <div class="in">Unless you've got an account created, you'll need to register
+        a new one with
+        FriendConnect! To do so, all fields under the <i>Create Account</i> section
+        must be filled out. Additionally, the email address you provide must be
+        in the following format: somestring@somestring.somestring! Accounts already
+        associated with an email address cannot have another account associated with
+        them! A log in session = 60 minutes! Another thing to note: by default, account
+        creation makes your account PUBLIC.</div>
+
+      <h3>Side Bars & Main Page</h3>
+
+      <div class="in">Once on the home page, there are 3 sections: the left side contains
+        several
+        buttons allowing for navigation across the site, the main portion contains the
+        current information you are viewing (posts, users, groups, etc.); default is
+        posts, and the right side contains information concerning your friends, the
+        groups you are in, and pending friend requests for you to accept/decline.</div>
+
+      <h3>Making Friends</h3>
+
+      <div class="in">The whole point of FriendConnect is to make new friends/meet new users!
+        If you want to make friends or view other users on this site, click the <i>View Other
+        Profiles</i> on the home page. This should lead you to a page where you can
+        view other people's profiles, read their bios, and send, accept, and decline
+        friend requests! Additionally, once you're friends with someone, you can unfriend
+        them as well (if you so choose).</div>
+
+      <h3>Posts & Comments</h3>
+
+      <div class="in">Once you're on the home page, it may seem pretty blank if you've got no
+        friends
+        making posts yet; however, to make a new post, click the <i>Make a New Post</i> button,
+        which should redirect you to an interface that allows you to make a new text-based post.
+        When you make a new post, it should redirect you to your feed and the post should be
+        there! To comment on a post, simply click <i>Comment</i> and that should redirect you
+        to another page where you can write your comment! Main posts can be edited, liked, and
+        unliked as well! The default home page/feed includes posts visible to you (so your posts
+        and the posts of your friends)!</div>
+
+      <h3>Groups</h3>
+
+      <div class="in">Alongside making friends, you can also create groups! To make a new group,
+        simply click the <i>Make a New Group</i> button, which should redirect you to an interface
+        that allows you to create a new group with a name and a brief bio that describes
+        what the group is about. To view other groups, you can click to <i>View Groups</i>
+        button. Here, you are taken to a page where you can view other groups, their bios, and
+        decide whether or not you'd like to join/leave groups!</div>
+
+      <h3>Edit Profile</h3>
+
+      <div class="in">Unhappy with some of the information you entered? Or would you like to
+        update your bio or privacy settings? Click the <i>Edit Profile</i> button on
+        the home page. Here, you can modify your first and last name, your bio
+        that is potentially displayed to other users! Additionally, you have the
+        ability to make your account Public or Private (a private account hides your
+        bio from other users)! You can also add/update your profile picture here to
+        show other users who you are!</div>
+
+      <h3>Logging Out</h3>
+
+      <div class="in">Ready to log out? Click the <i>LOGOUT</i> button on the upper right corner
+        of the page and your current session should end!</div>
+
+      <!-- Return back button for the user to click to go back to app -->
+      <div><input class="homeBut" onclick="returnHome();" type="button" value="Return Back"
+        /></div>
+
+    </div>
+
+  </body>
+</html>

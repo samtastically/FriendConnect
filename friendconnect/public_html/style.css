@@ -1,0 +1,131 @@
+/* Author: Samantha Cox
+   File: style.css
+   Description: This is the .css file for index.html. This contains all the
+   styling for the various attributes, classes, and ids on the index.html
+   page. Contains a variety of fonts, borders, and other styling
+   components that make the page more exciting than basic HTML. Specifically,
+   this just provides basic style to the client-side of the application by
+   adding some color, font, and a basic login UI. */
+
+/* No padding and margin for the body of the page */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Format header color */
+#header {
+  background-color: rgb(232, 164, 252);
+}
+
+/* Make .headerItems display as inline-block on the page */
+.headerItem {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Provide styling for the main "title" of the page */
+#title {
+  font-size: 20px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+}
+
+/* Positions style buttons in a fixed manner on the screen */
+#buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  font-size: 20px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+}
+
+/* Styles the user body to have a border and to be colored and to scroll if
+necessary */
+#userBody {
+  border-top: 2px dashed white;
+  position: fixed;
+  top: 110px;
+  bottom: 0px;
+  left: 0px;
+  width: 60%;
+  background-color: rgb(155, 67, 181);
+  text-align: left;
+  font-size: 25px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+  margin-right: 40px;
+  overflow-x: scroll;
+}
+
+/* Provides padding to inner elements in body */
+#inner {
+  padding-left: 30px;
+}
+
+/* Colors the error message so it stands out in the DOM if one is returned */
+#error, #createError {
+  color: rgb(255, 122, 228);
+}
+
+/* Styles Login and Create User buttons on the page */
+#userClick, #toAdd {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+}
+
+/* Styles the image on the page to be a certain percentage width so it grows a
+bit better with the page */
+#image {
+  border-top: 2px dashed white;
+  position: fixed;
+  top: 110px;
+  bottom: 0px;
+  right: 0px;
+  left: 60%;
+  width: 40%;
+  background-color: rgb(155, 67, 181);
+  text-align: center;
+  font-size: 25px;
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+}
+
+/* Provides padding to labels so they line up on the page */
+.passLabel {
+  padding-right: 60px;
+}
+
+/* Provides padding to labels so they line up on the page */
+#firstLabel {
+  padding-right: 36px;
+}
+
+/* Provides padding to labels so they line up on the page */
+#lastLabel {
+  padding-right: 43px;
+}
+
+/* Makes user input text input boxes slightly larger */
+.userIn {
+  width: 200px;
+}
+
+/* Provides padding to labels so they line up on the page */
+#head {
+  padding-left: 30px;
+}
+
+/* Styles the help button in the upper left corner of the page */
+.browse {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 16px;
+  color: purple;
+}
+
+/* Styles the image to be at 80% width */
+img {
+  width: 80%;
+}
