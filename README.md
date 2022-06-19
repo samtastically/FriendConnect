@@ -2,7 +2,7 @@
 
 Author: Samantha Cox [samtastic8@email.arizona.edu](mailto:samtastic8@email.arizona.edu)
 
-Date: Jul 22, 2020
+Date: July 22, 2020
 
 ## Notes
 
