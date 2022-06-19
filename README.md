@@ -8,12 +8,11 @@ Date: Jul 22, 2020
 
 #### Description
 
-This program is a social media application called FriendConnect where you can add friends, groups, posts, and customize your profile! More in depth information is described 
-on help.html. Furthermore, a demonstration is provided in the link on the video.txt file. This was originally launched/run on a personal server, but I have modified the 
-code to run locally (as the original host is no longer valid).
+This program is a social media application called FriendConnect where you can add friends, groups, posts, and customize your profile! More in depth information is described on help.html. Furthermore, a demonstration is provided in the link on the video.txt file. This was originally launched/run on a personal server, but I have modified the code to run locally (as the original host is no longer valid).
 
-The home page is updated dynamically when the user makes requests to different pages. Utilizes cookies to keep track of the user's session. Password is encrypted using the 
-crypto module (so that it is securely stored).
+The home page is updated dynamically when the user makes requests to different pages. Utilizes cookies to keep track of the user's session. Password is encrypted using the crypto module (so that it is securely stored).
+
+Server utilizes Node.js (specifically express and mongoose modules). DBMS used was MongoDB. The multer module was used to help store user images.
 
 #### Bugs
 
@@ -28,7 +27,7 @@ None that I am currently aware of. Note: the uploads/images folder should be in 
 * code.js -- the code that provides the functionality of index.html
 * code-help.js -- the code that provides the functionality of help.html
 * code-home.js -- the code that provides the functionality of home.html
-* style.css -- the style for login page
+* style.css -- the style for the login page
 * style-home.css -- the style for the home page
 * style-help.css -- the style for the help page
 * server.js -- the server code of the application
